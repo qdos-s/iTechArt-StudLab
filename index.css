@@ -1,0 +1,1234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(32, 38, 40);
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    width: 1923px;
+    height: 80px;
+    z-index: 3;
+}
+
+.wrapper {
+    height: 100%;
+    justify-content: center;
+    padding-left: 375px;
+    padding-right: 375px;
+    background-color: black;
+}
+
+
+.header {
+    display: grid;
+    height: 80px;
+    grid-template-columns: 750px 75px 75px 90px 85px 85px;
+    grid-template-areas:
+        "a b c d e f";
+}
+
+.box-site-name a {
+    max-width: 650px;
+    grid-area: a;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+
+.box-home a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: b;
+    height: 80px;
+}
+
+.box-about a {
+    grid-area: c;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-services a {
+    grid-area: d;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-portfolio a {
+    grid-area: e;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-contact a {
+    grid-area: f;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.block-img {
+    width: 1173px;
+    height: 560px;
+}
+
+.Layer_1 {
+    background-image: url("./photos/Layer 1.png");
+    opacity: 0.588;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 560px;
+    z-index: 10;
+}
+
+
+.bg {
+    background-color: rgb(102, 97, 85);
+    box-shadow: 0px 1px 0px 0px rgba(232, 232, 232, 0.75);
+    position: absolute;
+    left: -1px;
+    top: 80px;
+    width: 1922px;
+    height: 560px;
+    z-index: 9;
+}
+
+.cirR {
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 410px;
+    top: 300px;
+    width: 35px;
+    height: 70px;
+    z-index: 16;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+.cirL {
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 375px;
+    top: 300px;
+    width: 35px;
+    height: 70px;
+    z-index: 15;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+
+}
+
+.cirR p {
+    position: absolute;
+    line-height: 70px;
+    left: 8px;
+}
+
+.cirL p {
+    position: absolute;
+    line-height: 70px;
+    right: 8px;
+}
+
+.Clivuam_tinc {
+    font-size: 31px;
+    font-family: "FjallaOne";
+    color: rgb(231, 231, 231);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 374.926px;
+    top: 394.4px;
+    z-index: 11;
+}
+
+.Nunc_dignissim_risus_id_metus {
+    font-size: 31px;
+    font-family: "FjallaOne";
+    color: rgb(231, 231, 231);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 373.864px;
+    top: 433.4px;
+    z-index: 12;
+}
+
+
+.http {
+    font-size: 15px;
+    font-family: "FjallaOne";
+    color: rgb(232, 76, 61);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 373.937px;
+    top: 475.883px;
+    z-index: 13;
+}
+
+.line {
+    background-image: url("./photos/line.png");
+    position: absolute;
+    left: 625px;
+    top: 410px;
+    width: 252px;
+    height: 2px;
+    z-index: 14;
+}
+
+.grey_bar {
+    width: 1173px;
+    height: 275px;
+}
+
+.grey_background {
+    display: grid;
+    grid-template-areas: "a b c";
+    grid-template-columns: repeat(3, 385px);
+    grid-gap: 30px;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+    left: -2px;
+    top: 640px;
+    width: 1923px;
+    height: 277px;
+    z-index: 19;
+    justify-content: center;
+}
+
+.content-item1 {
+    grid-area: a;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item2 {
+    grid-area: b;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item3 {
+    grid-area: c;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item1-grid {
+    display: grid;
+    grid-template-areas:
+        "x y"
+        "x z";
+    grid-template-columns: 100px 270px;
+    grid-template-rows: auto;
+
+}
+
+.icon-item1 {
+    grid-area: x;
+    border-radius: 50%;
+    background-image: url("./photos/1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 375px;
+    top: 101px;
+    width: 70px;
+    height: 70px;
+    z-index: 23;
+
+}
+
+.aliquam-item1 p {
+    grid-area: y;
+    font-size: 21px;
+    font-family: "FjallaOne";
+    color: rgb(32, 38, 40);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 475.921px;
+    top: 106.261px;
+    z-index: 21;
+}
+
+.text-item1 p {
+    grid-area: z;
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 474.937px;
+    top: 140.25px;
+    width: 263px;
+    height: 60px;
+    z-index: 22;
+}
+
+.content-item2-grid {
+    display: grid;
+    grid-template-areas:
+        "x y"
+        "x z";
+    grid-template-columns: 100px 270px;
+    grid-template-rows: auto;
+}
+
+.icon-item2 {
+    background-image: url("./photos/2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 775px;
+    top: 101px;
+    width: 70px;
+    height: 70px;
+    z-index: 29;
+}
+
+.cras-item2 {
+    grid-area: y;
+    font-size: 21px;
+    font-family: "FjallaOne";
+    color: rgb(32, 38, 40);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 874.924px;
+    top: 106.261px;
+    z-index: 27;
+}
+
+.text-item2 {
+    grid-area: z;
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 874.937px;
+    top: 140.25px;
+    width: 263px;
+    height: 60px;
+    z-index: 28;
+}
+
+.content-item3-grid {
+    display: grid;
+    grid-template-areas:
+        "x y"
+        "x z";
+    grid-template-columns: 100px 270px;
+    grid-template-rows: auto;
+}
+
+.icon-item3 {
+    background-image: url("./photos/3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 1175px;
+    top: 101px;
+    width: 70px;
+    height: 70px;
+    z-index: 37;
+}
+
+.vivamus-item3 {
+    grid-area: y;
+    font-size: 21px;
+    font-family: "FjallaOne";
+    color: rgb(32, 38, 40);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 1275.847px;
+    top: 106.9px;
+    z-index: 33;
+}
+
+.text-item3 {
+    grid-area: z;
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 1274.937px;
+    top: 140.25px;
+    width: 263px;
+    height: 60px;
+    z-index: 34;
+}
+
+.white_bar {
+    width: 1173px;
+    height: 515px;
+}
+
+.white_background {
+    background-color: white;
+    position: absolute;
+    top: 915px;
+    left: -2px;
+    width: 1923px;
+    height: 516px;
+}
+
+.white_bar_grid {
+    display: grid;
+    grid-template-columns: 385px 385px 400px;
+    grid-template-rows: 153px 40px 240px;
+    grid-template-areas:
+        "a a b",
+        "c c b",
+        "d e b";
+
+    justify-content: center;
+
+}
+
+.item-a {
+    grid-area: a;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Donec {
+    background-image: url("./photos/Donec nec justo eget felis facilisis fermentum. Aliquam porttit.png");
+    position: absolute;
+    left: 377px;
+    top: 80px;
+    width: 628px;
+    height: 46px;
+    z-index: 42;
+}
+
+
+
+.item-b {
+    grid-area: b;
+    grid-row: 1/4;
+    grid-column: 3;
+
+}
+
+.Shape_2 {
+    border-radius: 50%;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+    left: 1191px;
+    top: 80px;
+    width: 355px;
+    height: 355px;
+    z-index: 35;
+}
+
+
+
+.item-c {
+    grid-area: c;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.lineC {
+    background-image: url("./photos/line.png");
+    position: absolute;
+    left: 375px;
+    top: 151px;
+    width: 770px;
+    height: 41px;
+    z-index: 43;
+    text-align: center;
+
+}
+
+.img-wrap {
+    position: absolute;
+    left: 375px;
+    z-index: 100;
+    width: 770px;
+    height: 37px;
+    background-color: white;
+
+}
+
+.Civamus {
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    z-index: 52;
+}
+
+
+.item-d {
+    grid-area: d;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Sed_egestas_anteet_ {
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(32, 38, 40);
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 375px;
+    top: 220px;
+    z-index: 45;
+}
+
+.Eros_pede_semper_est__vitae_luctus_metus_libero {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 375px;
+    top: 250px;
+    width: 350px;
+    height: 108px;
+    z-index: 44;
+}
+
+.btn {
+    background-color: rgb(232, 76, 61);
+    border-radius: 40px;
+    position: absolute;
+    border: 0;
+    left: 375px;
+    top: 396px;
+    width: 70px;
+    height: 37px;
+    z-index: 46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.More {
+
+    font-size: 14px;
+    font-family: "Oswald";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: center;
+    position: absolute;
+
+    z-index: 47;
+}
+
+
+
+.item-e {
+    grid-area: e;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Aenean_egestas_anteet_ {
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(32, 38, 40);
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 760px;
+    top: 220px;
+    z-index: 45;
+}
+
+.Lorem_pede_semper_est__vitae_luctus_metus_libero {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 760px;
+    top: 250px;
+    width: 350px;
+    height: 108px;
+    z-index: 44;
+}
+
+.btnE {
+    background-color: rgb(232, 76, 61);
+    border-radius: 40px;
+    position: absolute;
+    border: 0;
+    left: 760px;
+    top: 396px;
+    width: 70px;
+    height: 37px;
+    z-index: 46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MoreE {
+
+    font-size: 14px;
+    font-family: "Oswald";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: center;
+    position: absolute;
+
+    z-index: 47;
+}
+
+
+.red_background {
+    width: 1173px;
+    height: 188px;
+    left: 375px;
+    border-radius: 10px;
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    height: 187px;
+    z-index: 99;
+}
+
+.white_bg {
+    background-color: white;
+    width: 1923px;
+    height: 187px;
+    left: -2px;
+    position: absolute;
+    z-index: 1;
+}
+
+.red_background_grid {
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item3 item4";
+    grid-template-columns: 125px 500px 395px 150px;
+    grid-template-rows: 187px;
+
+}
+
+.red-item1 {
+    grid: item1;
+
+}
+
+.Shape_3 {
+    border-radius: 50%;
+    background-image: url("./photos/man.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(32, 38, 40);
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    width: 70px;
+    height: 70px;
+    z-index: 60;
+}
+
+
+.red-item2 {
+    grid: item2;
+}
+
+.Donec_nec_justo_eget {
+    font-size: 21px;
+    font-family: "FjallaOne";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 45px;
+    z-index: 57;
+}
+
+.Ede_semper_est {
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    left: 125px;
+    top: 88px;
+    width: 435px;
+    height: 40px;
+    z-index: 58;
+}
+
+.author {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    line-height: 1.714;
+    text-align: center;
+    position: absolute;
+    z-index: 59;
+}
+
+.red-item3 {
+    grid: item3;
+}
+
+.Morbi_vitae_luctus {
+    font-size: 21px;
+    font-family: "FjallaOne";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 45px;
+    z-index: 69;
+}
+
+.red-form {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 95px;
+    border: none;
+    border-radius: 40px;
+    width: 380px;
+    height: 41px;
+    z-index: 64;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(159, 170, 173);
+    font-style: italic;
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 65;
+}
+
+
+
+.red-item4 {
+    grid: item4;
+}
+
+.red-btn {
+    background-color: rgb(32, 38, 40);
+    position: absolute;
+    top: 95px;
+    border: none;
+    border-radius: 40px;
+    width: 120px;
+    height: 41px;
+    z-index: 66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe {
+    font-size: 12px;
+    font-family: "FjallaOne";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    z-index: 68;
+}
+
+.last_block {
+    background-color: white;
+    width: 1923px;
+    height: 567px;
+    left: -2px;
+    position: absolute;
+    top: 1615px;
+    z-index: 1;
+}
+
+.last_block_grid {
+    display: grid;
+    position: absolute;
+    width: 1173px;
+    height: 567px;
+    left: 375px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: 110px 390px;
+    grid-template-areas:
+        "a b c",
+        "d e f";
+}
+
+.lb_item1 {
+    grid-area: a;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Aliquam_tincidunt {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "FjallaOne";
+    color: rgb(32, 38, 40);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 65px;
+    z-index: 74;
+}
+
+.lb_item2 {
+    grid-area: b;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Nunc_dignissim_risu {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "FjallaOne";
+    color: rgb(32, 38, 40);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 65px;
+    z-index: 74;
+}
+
+.lb_item3 {
+    grid-area: c;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.lb_item4 {
+    grid-area: d;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.img-lb1 {
+    border-radius: 50%;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+    top: 150px;
+    width: 70px;
+    height: 70px;
+    z-index: 75;
+}
+
+.p_lb1 {
+    background-image: url("./photos/line.png");
+    position: absolute;
+    top: 130px;
+    width: 370px;
+    height: 1px;
+    z-index: 86;
+}
+
+.Donec_nec_justo_eget_felis_facilisis_fermentum_ {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 100px;
+    top: 155px;
+    width: 254px;
+    height: 58px;
+    z-index: 83;
+}
+
+.lb_link1 {
+    text-decoration: none;
+    color: red;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    width: 100px;
+}
+
+.container1 {
+    position: absolute;
+    top: -20px;
+}
+
+.container2 {
+    position: absolute;
+}
+
+.item2 {
+    position: absolute;
+    top: 125px;
+}
+
+.container3 {
+    position: absolute;
+    top: 235px;
+}
+
+.item3 {
+    position: absolute;
+    top: 125px;
+}
+
+.item4 {
+    position: absolute;
+    top: 265px;
+}
+
+
+.lb_item5 {
+    grid-area: e;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    width: 370px;
+    height: 392px;
+    z-index: 90;
+}
+
+.content-nunc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sed_egestas__ante_et_vulputate_volutpat__eros_p {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    top: 145px;
+    width: 301px;
+    height: 36px;
+    z-index: 91;
+}
+
+.input-lb {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 210px;
+    border: none;
+    border-radius: 40px;
+    width: 310px;
+    height: 41px;
+    z-index: 92;
+}
+
+.email-lb {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 270px;
+    border: none;
+    border-radius: 40px;
+    width: 310px;
+    height: 41px;
+    z-index: 92;
+}
+
+.textarea-lb {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 333px;
+    border: none;
+    border-radius: 10px;
+    width: 310px;
+    height: 81px;
+    z-index: 92;
+}
+
+.btn-lb {
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    top: 437px;
+    left: 430px;
+    border: none;
+    border-radius: 40px;
+    width: 100px;
+    height: 41px;
+    z-index: 97;
+}
+
+.send-btn {
+    font-size: 15px;
+    font-family: "FjallaOne";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    z-index: 98;
+}
+
+
+
+
+.lb_item6 {
+    grid-area: f;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.personal-data {
+    font-size: 18px;
+    font-family: "Lato";
+    color: rgb(232, 76, 61);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    top: 145px;
+    left: 50px;
+    width: 250px;
+    height: 63px;
+    z-index: 105;
+}
+
+.personal-lb {
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(118, 124, 126);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    width: 250px;
+    height: 63px;
+    z-index: 105;
+}
+
+.icons-lb {
+    position: absolute;
+    top: 150px;
+}
+
+.footer {
+    background-color: rgb(32, 38, 40);
+    position: absolute;
+    left: -2px;
+    top: 2182px;
+    width: 1923px;
+    height: 204px;
+    z-index: 118;
+}
+
+.footer-grid {
+    display: grid;
+    position: absolute;
+    width: 1173px;
+    height: 204px;
+    left: 375px;
+    grid-template-areas:
+        "a b c d",
+        "e b c d";
+    grid-template-columns: 1023px repeat(3, 1fr);
+    grid-template-rows: 110px 50px;
+}
+
+.footer-el1 {
+    grid-area: a;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-links {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(231, 231, 231);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 100px;
+    z-index: 119;
+}
+
+.slash {
+    color: rgb(159, 170, 173);
+    margin: 15px;
+}
+
+
+.footer-el2 {
+    grid-area: b;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-crcl1 {
+    border-radius: 50%;
+    background-image: url("./photos/foot1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 1025px;
+    top: 80px;
+    width: 43px;
+    height: 43px;
+    z-index: 121;
+}
+
+.footer-el3 {
+    grid-area: c;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-crcl2 {
+    border-radius: 50%;
+    background-image: url("./photos/foot2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 1078px;
+    top: 80px;
+    width: 43px;
+    height: 43px;
+    z-index: 121;
+}
+
+.footer-el4 {
+    grid-area: d;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-crcl3 {
+    border-radius: 50%;
+    background-image: url("./photos/foot3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(232, 76, 61);
+    position: absolute;
+    left: 1130px;
+    top: 80px;
+    width: 43px;
+    height: 43px;
+    z-index: 121;
+}
+
+.footer-el5 {
+    grid-area: e;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footer-p {
+    font-size: 14px;
+    font-family: "Lato";
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    top: 125px;
+    z-index: 120;
+}
