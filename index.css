@@ -1232,3 +1232,531 @@ i {
     top: 125px;
     z-index: 120;
 }
+
+@media screen and (max-width:470px) {
+    .header {
+        padding-left: 10px;
+        display: grid;
+        justify-content: center;
+        width: 470px;
+        height: 80px;
+        grid-template-columns: 60px 70px 70px 85px 95px 75px;
+        grid-template-areas:
+            "a b c d e f";
+        position: absolute;
+        left: 0;
+    }
+
+    .block-img {
+        width: 470px;
+        height: 135px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+
+    .Layer_1 {
+        background-size: 470px;
+        background-image: url("./photos/Layer 1.png");
+        background-repeat: no-repeat;
+        opacity: 0.588;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 470px;
+        height: 135px;
+        z-index: 10;
+    }
+
+    .cirR {
+        left: 120px;
+        top: 80px;
+        width: 20px;
+        height: 40px;
+    }
+
+    .cirL {
+        left: 95px;
+        top: 80px;
+        width: 20px;
+        height: 40px;
+    }
+
+    .cirR p {
+        top: -13px;
+        left: 3px;
+    }
+
+    .cirL p {
+        top: -13px;
+        right: 2px;
+    }
+
+    .Clivuam_tinc {
+        font-size: 12px;
+        left: 145px;
+        top: 80px;
+    }
+
+    .Nunc_dignissim_risus_id_metus {
+        font-size: 10px;
+        left: 145px;
+        top: 100px;
+    }
+
+
+    .http {
+        font-size: 8px;
+        left: 145px;
+        top: 115px;
+    }
+
+    .line {
+        left: 240px;
+        top: 85px;
+        width: 70px;
+        height: 1px;
+    }
+
+    .grey_bar {
+        width: 470px;
+        height: 275px;
+    }
+
+    .grey_background {
+        display: grid;
+        grid-template-areas: "a b c";
+        grid-template-columns: repeat(3, 156px);
+        grid-gap: 5px;
+        position: absolute;
+        left: 0px;
+        top: 215px;
+        width: 470px;
+        height: 277px;
+
+    }
+
+    .content-item1-grid {
+        grid-template-columns: 56px 100px;
+    }
+
+    .icon-item1 {
+        left: 40px;
+        top: 30px;
+    }
+
+    .aliquam-item1 p {
+        font-size: 11px;
+        left: 25px;
+        top: 130px;
+    }
+
+    .text-item1 p {
+        font-size: 10px;
+        left: 20px;
+        top: 150px;
+        width: 140px;
+        height: 40px;
+    }
+
+    .content-item2-grid {
+        grid-template-columns: 56px 100px;
+    }
+
+    .icon-item2 {
+        left: 200px;
+        top: 30px;
+    }
+
+    .cras-item2 {
+        font-size: 11px;
+        left: 170px;
+        top: 130px;
+    }
+
+    .text-item2 {
+        font-size: 10px;
+        left: 165px;
+        top: 150px;
+        width: 156px;
+        height: 40px;
+    }
+
+    .content-item3-grid {
+        grid-template-columns: 56px 100px;
+    }
+
+    .icon-item3 {
+        left: 360px;
+        top: 30px;
+    }
+
+    .vivamus-item3 {
+        font-size: 11px;
+        left: 330px;
+        top: 130px;
+    }
+
+    .text-item3 {
+        font-size: 10px;
+        left: 325px;
+        top: 150px;
+        width: 140px;
+        height: 40px;
+    }
+
+    .white_bar {
+        width: 470px;
+        height: 515px;
+    }
+
+    .white_background {
+        top: 490px;
+        left: 0;
+        width: 470px;
+        height: 515px;
+    }
+
+    .Donec {
+        left: 50px;
+        top: 130px;
+        width: 200px;
+        height: 45px;
+    }
+
+    .Shape_2 {
+        left: 280px;
+        top: 40px;
+        width: 155px;
+        height: 155px;
+    }
+
+    .lineC {
+        left: 50px;
+        top: 200px;
+        width: 305px;
+        height: 40px;
+    }
+
+    .img-wrap {
+        top: 201px;
+        left: 50px;
+        width: 305px;
+        height: 38px;
+    }
+
+    .Sed_egestas_anteet_ {
+        font-size: 12px;
+        left: 50px;
+        top: 270px;
+    }
+
+    .Eros_pede_semper_est__vitae_luctus_metus_libero {
+        font-size: 10px;
+        left: 50px;
+        top: 300px;
+        width: 150px;
+        height: 108px;
+    }
+
+    .btn {
+        left: 50px;
+        top: 430px;
+    }
+
+    .Aenean_egestas_anteet_ {
+        font-size: 12px;
+        left: 270px;
+        top: 270px;
+    }
+
+    .Lorem_pede_semper_est__vitae_luctus_metus_libero {
+        font-size: 10px;
+        left: 270px;
+        top: 300px;
+        width: 150px;
+        height: 108px;
+    }
+
+    .btnE {
+        left: 270px;
+        top: 430px;
+    }
+
+    .red_background {
+        width: 470px;
+        left: 0px;
+        top: 185px;
+    }
+
+    .white_bg {
+        width: 470px;
+        height: 187px;
+        left: 0px;
+    }
+
+    .red_background_grid {
+        grid-template-columns: 50px 150px 170px 100px;
+    }
+
+    .Shape_3 {
+        left: 10px;
+        top: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .Donec_nec_justo_eget {
+        font-size: 12px;
+        top: 25px;
+    }
+
+    .Ede_semper_est {
+        font-size: 12px;
+        left: 70px;
+        top: 50px;
+        width: 135px;
+        height: 40px;
+    }
+
+    .author {
+        font-size: 12px;
+        top: 80px;
+        left: -5px;
+    }
+
+    .Morbi_vitae_luctus {
+        font-size: 12px;
+        left: 220px;
+        top: 25px;
+    }
+
+    .red-form {
+        top: 55px;
+        left: 220px;
+        border-radius: 40px;
+        width: 200px;
+        height: 31px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .red-btn {
+        left: 220px;
+        top: 95px;
+        width: 100px;
+        height: 31px;
+    }
+
+    .last_block {
+        width: 470px;
+        height: 1400px;
+        left: 0x;
+        top: 1160px;
+    }
+
+    .last_block_grid {
+        width: 470px;
+        height: 1400px;
+        left: 0px;
+        grid-template-rows: 100px 300px 100px 300px 100px 300px;
+        grid-template-columns: 470px;
+        grid-template-areas:
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f";
+    }
+
+    .Aliquam_tincidunt {
+        top: 55px;
+        left: 125px;
+    }
+
+    .lb_item4 {
+        grid-area: d;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .lb_item2 {
+        grid-area: b;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .Nunc_dignissim_risu {
+        font-size: 21px;
+        left: 125px;
+        top: 515px;
+        z-index: 100;
+    }
+
+    .lb_item5 {
+        grid-area: d;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 470px;
+    }
+
+    .img-lb1 {
+        left: 70px;
+        top: 150px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .p_lb1 {
+        left: 20px;
+        top: 130px;
+        width: 430px;
+        height: 1px;
+    }
+
+    .Donec_nec_justo_eget_felis_facilisis_fermentum_ {
+        left: 160px;
+    }
+
+    .lb_link1 {
+        left: 160px;
+    }
+
+
+    .lb_item3 {
+        grid-area: c;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 470px;
+        height: 400px;
+    }
+
+    .Sed_egestas__ante_et_vulputate_volutpat__eros_p {
+        font-size: 14px;
+        top: 545px;
+        width: 301px;
+        height: 36px;
+    }
+
+    .input-lb {
+        top: 600px;
+    }
+
+    .email-lb {
+        top: 660px;
+    }
+
+    .textarea-lb {
+        top: 720px;
+    }
+
+    .btn-lb {
+        top: 820px;
+        left: 80px;
+        width: 100px;
+        height: 41px;
+    }
+
+    .lb_item6 {
+        grid-area: f;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .personal-data {
+        top: 980px;
+        left: 150px;
+    }
+
+    .personal-lb {
+        top: 1010px;
+        left: 150px;
+    }
+
+    .icons-lb {
+        position: absolute;
+        left: 100px;
+        top: 980px;
+    }
+
+    .lb_item3 .Aliquam_tincidunt {
+        position: absolute;
+        top: 910px;
+        left: 125px;
+    }
+
+    .container1 {
+        top: -20px;
+    }
+
+    .container2 {
+        top: 100px;
+    }
+
+
+    .footer {
+        left: 0;
+        top: 2560px;
+        width: 470px;
+        height: 204px;
+    }
+
+    .footer-grid {
+        width: 470px;
+        height: 204px;
+        left: 0;
+        grid-template-areas:
+            "a b c d",
+            "e b c d";
+        grid-template-columns: 320px repeat(3, 1fr);
+        grid-template-rows: 110px 50px;
+    }
+
+    .footer-links {
+        font-size: 10px;
+        top: 100px;
+        left: 10px;
+    }
+
+    .footer-crcl1 {
+        left: 350px;
+        top: 95px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-crcl2 {
+        left: 390px;
+        top: 95px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-crcl3 {
+        left: 430px;
+        top: 95px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-p {
+        font-size: 14px;
+        top: 135px;
+        left: 10px;
+    }
+}
