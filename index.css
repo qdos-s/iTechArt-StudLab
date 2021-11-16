@@ -46,6 +46,8 @@ body {
     align-items: center;
     grid-area: b;
     height: 80px;
+    background-color: #e84c3d; 
+    text-align: center;
 }
 
 .box-about a {
@@ -238,6 +240,10 @@ i {
     height: 277px;
     z-index: 19;
     justify-content: center;
+}
+
+.redLink {
+    color: red;
 }
 
 .content-item1 {
@@ -1095,6 +1101,10 @@ i {
     z-index: 105;
 }
 
+.span-data {
+    font-weight: bold;
+}
+
 .icons-lb {
     position: absolute;
     top: 150px;
@@ -1147,6 +1157,12 @@ i {
     margin: 15px;
 }
 
+.span-red {
+    color: rgb(232, 76, 61);
+}
+.span-grey {
+    color:rgb(159, 170, 173);
+}
 
 .footer-el2 {
     grid-area: b;
