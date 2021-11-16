@@ -177,7 +177,7 @@ i {
 
 .Clivuam_tinc {
     font-size: 31px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(231, 231, 231);
     text-transform: uppercase;
     line-height: 1.2;
@@ -190,7 +190,7 @@ i {
 
 .Nunc_dignissim_risus_id_metus {
     font-size: 31px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(231, 231, 231);
     text-transform: uppercase;
     line-height: 1.2;
@@ -204,7 +204,7 @@ i {
 
 .http {
     font-size: 15px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(232, 76, 61);
     line-height: 1.2;
     text-align: left;
@@ -301,7 +301,7 @@ i {
 .aliquam-item1 p {
     grid-area: y;
     font-size: 21px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(32, 38, 40);
     text-transform: uppercase;
     line-height: 1.2;
@@ -315,7 +315,7 @@ i {
 .text-item1 p {
     grid-area: z;
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.714;
     text-align: left;
@@ -353,7 +353,7 @@ i {
 .cras-item2 {
     grid-area: y;
     font-size: 21px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(32, 38, 40);
     text-transform: uppercase;
     line-height: 1.2;
@@ -367,7 +367,7 @@ i {
 .text-item2 {
     grid-area: z;
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.714;
     text-align: left;
@@ -405,7 +405,7 @@ i {
 .vivamus-item3 {
     grid-area: y;
     font-size: 21px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(32, 38, 40);
     text-transform: uppercase;
     line-height: 1.2;
@@ -419,7 +419,7 @@ i {
 .text-item3 {
     grid-area: z;
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.714;
     text-align: left;
@@ -546,7 +546,7 @@ i {
 
 .Sed_egestas_anteet_ {
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(32, 38, 40);
     font-weight: bold;
     line-height: 1.5;
@@ -558,7 +558,7 @@ i {
 
 .Eros_pede_semper_est__vitae_luctus_metus_libero {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.714;
     text-align: left;
@@ -588,7 +588,7 @@ i {
 .More {
 
     font-size: 14px;
-    font-family: "Oswald";
+    font-family: "Oswald", serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.714;
@@ -610,7 +610,7 @@ i {
 
 .Aenean_egestas_anteet_ {
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(32, 38, 40);
     font-weight: bold;
     line-height: 1.5;
@@ -622,7 +622,7 @@ i {
 
 .Lorem_pede_semper_est__vitae_luctus_metus_libero {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.714;
     text-align: left;
@@ -652,7 +652,7 @@ i {
 .MoreE {
 
     font-size: 14px;
-    font-family: "Oswald";
+    font-family: "Oswald", serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.714;
@@ -718,7 +718,7 @@ i {
 
 .Donec_nec_justo_eget {
     font-size: 21px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2;
@@ -730,7 +730,7 @@ i {
 
 .Ede_semper_est {
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(255, 255, 255);
     line-height: 1.5;
     text-align: left;
@@ -744,7 +744,7 @@ i {
 
 .author {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(255, 255, 255);
     font-style: italic;
     line-height: 1.714;
@@ -782,7 +782,7 @@ i {
 
 ::placeholder {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(159, 170, 173);
     font-style: italic;
     line-height: 1.714;
@@ -815,7 +815,7 @@ i {
 
 .subscribe {
     font-size: 12px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2;
@@ -859,7 +859,7 @@ i {
 .Aliquam_tincidunt {
     font-size: 21px;
     font-weight: bold;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(32, 38, 40);
     text-transform: uppercase;
     line-height: 1.2;
@@ -880,7 +880,7 @@ i {
 .Nunc_dignissim_risu {
     font-size: 21px;
     font-weight: bold;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(32, 38, 40);
     text-transform: uppercase;
     line-height: 1.2;
@@ -927,7 +927,7 @@ i {
 
 .Donec_nec_justo_eget_felis_facilisis_fermentum_ {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.714;
     text-align: left;
@@ -999,7 +999,7 @@ i {
 
 .Sed_egestas__ante_et_vulputate_volutpat__eros_p {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.714;
     text-align: left;
@@ -1057,7 +1057,7 @@ i {
 
 .send-btn {
     font-size: 15px;
-    font-family: "FjallaOne";
+    font-family: "FjallaOne", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2;
@@ -1077,7 +1077,7 @@ i {
 
 .personal-data {
     font-size: 18px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(232, 76, 61);
     line-height: 1.5;
     text-align: left;
@@ -1091,7 +1091,7 @@ i {
 
 .personal-lb {
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(118, 124, 126);
     line-height: 1.5;
     text-align: left;
@@ -1145,7 +1145,7 @@ i {
 
 .footer-links {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     color: rgb(231, 231, 231);
     line-height: 1.2;
     text-align: left;
@@ -1242,7 +1242,7 @@ i {
 
 .footer-p {
     font-size: 14px;
-    font-family: "Lato";
+    font-family: "Lato", monospace;
     line-height: 1.714;
     text-align: left;
     position: absolute;
