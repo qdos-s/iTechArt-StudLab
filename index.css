@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&family=Oswald&display=swap');
 
+:root {
+    --red-color: rgb(232, 76, 61);
+    --grey-color: rgb(102, 97, 85);
+    --light-grey-color: rgb(231, 231, 231);
+    --white-color: rgb(255, 255, 255);
+    --light-black-color: rgb(32, 38, 40);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +16,7 @@
 
 body {
     height: 80px;
-    background-color: rgb(32, 38, 40);
+    background-color: var(--light-black-color);
     position: absolute;
     left: -2px;
     top: 0px;
@@ -48,7 +56,7 @@ body {
     align-items: center;
     grid-area: b;
     height: 80px;
-    background-color: #e84c3d; 
+    background-color: var(--red-color); 
     text-align: center;
 }
 
@@ -87,7 +95,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
 }
 
 
@@ -111,7 +119,7 @@ a {
 
 
 .bg {
-    background-color: rgb(102, 97, 85);
+    background-color: var(--grey-color);
     box-shadow: 0px 1px 0px 0px rgba(232, 232, 232, 0.75);
     position: absolute;
     left: -1px;
@@ -122,7 +130,7 @@ a {
 }
 
 .cirR {
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 410px;
     top: 300px;
@@ -133,7 +141,7 @@ a {
 }
 
 .cirL {
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 375px;
     top: 300px;
@@ -178,7 +186,7 @@ i {
 .Clivuam_tinc {
     font-size: 31px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(231, 231, 231);
+    color: var(--light-grey-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -191,7 +199,7 @@ i {
 .Nunc_dignissim_risus_id_metus {
     font-size: 31px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(231, 231, 231);
+    color: var(--light-grey-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -205,7 +213,7 @@ i {
 .http {
     font-size: 15px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(232, 76, 61);
+    color: var(--red-color);
     line-height: 1.2;
     text-align: left;
     position: absolute;
@@ -234,7 +242,7 @@ i {
     grid-template-areas: "a b c";
     grid-template-columns: repeat(3, 385px);
     grid-gap: 30px;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--light-grey-color);
     position: absolute;
     left: -2px;
     top: 640px;
@@ -245,7 +253,7 @@ i {
 }
 
 .redLink {
-    color: red;
+    color: var(--red-color);
 }
 
 .content-item1 {
@@ -288,7 +296,7 @@ i {
     background-image: url("./photos/1.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 375px;
     top: 101px;
@@ -302,7 +310,7 @@ i {
     grid-area: y;
     font-size: 21px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(32, 38, 40);
+    color: var(--light-black-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -316,7 +324,7 @@ i {
     grid-area: z;
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.714;
     text-align: left;
     position: absolute;
@@ -341,7 +349,7 @@ i {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 775px;
     top: 101px;
@@ -354,7 +362,7 @@ i {
     grid-area: y;
     font-size: 21px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(32, 38, 40);
+    color: var(--light-black-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -368,7 +376,7 @@ i {
     grid-area: z;
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.714;
     text-align: left;
     position: absolute;
@@ -393,7 +401,7 @@ i {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 1175px;
     top: 101px;
@@ -406,7 +414,7 @@ i {
     grid-area: y;
     font-size: 21px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(32, 38, 40);
+    color: var(--light-black-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -420,7 +428,7 @@ i {
     grid-area: z;
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.714;
     text-align: left;
     position: absolute;
@@ -437,7 +445,7 @@ i {
 }
 
 .white_background {
-    background-color: white;
+    background-color: var(--white-color);
     position: absolute;
     top: 915px;
     left: -2px;
@@ -487,7 +495,7 @@ i {
 
 .Shape_2 {
     border-radius: 50%;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--light-grey-color);
     position: absolute;
     left: 1191px;
     top: 80px;
@@ -524,7 +532,7 @@ i {
     z-index: 100;
     width: 770px;
     height: 37px;
-    background-color: white;
+    background-color: var(--white-color);
 
 }
 
@@ -547,7 +555,7 @@ i {
 .Sed_egestas_anteet_ {
     font-size: 16px;
     font-family: "Lato", monospace;
-    color: rgb(32, 38, 40);
+    color: var(--light-black-color);
     font-weight: bold;
     line-height: 1.5;
     position: absolute;
@@ -559,7 +567,7 @@ i {
 .Eros_pede_semper_est__vitae_luctus_metus_libero {
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.714;
     text-align: left;
     position: absolute;
@@ -571,7 +579,7 @@ i {
 }
 
 .btn {
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     border-radius: 40px;
     position: absolute;
     border: 0;
@@ -589,7 +597,7 @@ i {
 
     font-size: 14px;
     font-family: "Oswald", serif;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     text-transform: uppercase;
     line-height: 1.714;
     text-align: center;
@@ -611,7 +619,7 @@ i {
 .Aenean_egestas_anteet_ {
     font-size: 16px;
     font-family: "Lato", monospace;
-    color: rgb(32, 38, 40);
+    color: var(--light-black-color);
     font-weight: bold;
     line-height: 1.5;
     position: absolute;
@@ -623,7 +631,7 @@ i {
 .Lorem_pede_semper_est__vitae_luctus_metus_libero {
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.714;
     text-align: left;
     position: absolute;
@@ -635,7 +643,7 @@ i {
 }
 
 .btnE {
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     border-radius: 40px;
     position: absolute;
     border: 0;
@@ -653,7 +661,7 @@ i {
 
     font-size: 14px;
     font-family: "Oswald", serif;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     text-transform: uppercase;
     line-height: 1.714;
     text-align: center;
@@ -668,14 +676,14 @@ i {
     height: 188px;
     left: 375px;
     border-radius: 10px;
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     height: 187px;
     z-index: 99;
 }
 
 .white_bg {
-    background-color: white;
+    background-color: var(--white-color);
     width: 1923px;
     height: 187px;
     left: -2px;
@@ -702,7 +710,7 @@ i {
     background-image: url("./photos/man.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(32, 38, 40);
+    background-color: var(--light-black-color);
     position: absolute;
     left: 30px;
     top: 50px;
@@ -719,7 +727,7 @@ i {
 .Donec_nec_justo_eget {
     font-size: 21px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -731,7 +739,7 @@ i {
 .Ede_semper_est {
     font-size: 16px;
     font-family: "Lato", monospace;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     line-height: 1.5;
     text-align: left;
     position: absolute;
@@ -745,7 +753,7 @@ i {
 .author {
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     font-style: italic;
     line-height: 1.714;
     text-align: center;
@@ -760,7 +768,7 @@ i {
 .Morbi_vitae_luctus {
     font-size: 21px;
     font-family: "FjallaOne";
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -770,7 +778,7 @@ i {
 }
 
 .red-form {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-color);
     position: absolute;
     top: 95px;
     border: none;
@@ -783,7 +791,7 @@ i {
 ::placeholder {
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(159, 170, 173);
+    color: var(--grey-color);
     font-style: italic;
     line-height: 1.714;
     text-align: left;
@@ -800,7 +808,7 @@ i {
 }
 
 .red-btn {
-    background-color: rgb(32, 38, 40);
+    background-color: var(--light-black-color);
     position: absolute;
     top: 95px;
     border: none;
@@ -816,7 +824,7 @@ i {
 .subscribe {
     font-size: 12px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -825,7 +833,7 @@ i {
 }
 
 .last_block {
-    background-color: white;
+    background-color: var(--white-color);
     width: 1923px;
     height: 567px;
     left: -2px;
@@ -860,7 +868,7 @@ i {
     font-size: 21px;
     font-weight: bold;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(32, 38, 40);
+    color: var(--light-black-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -881,7 +889,7 @@ i {
     font-size: 21px;
     font-weight: bold;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(32, 38, 40);
+    color: var(--light-black-color);
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
@@ -908,7 +916,7 @@ i {
 
 .img-lb1 {
     border-radius: 50%;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--light-gray);
     position: absolute;
     top: 150px;
     width: 70px;
@@ -928,7 +936,7 @@ i {
 .Donec_nec_justo_eget_felis_facilisis_fermentum_ {
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.714;
     text-align: left;
     position: absolute;
@@ -941,7 +949,7 @@ i {
 
 .lb_link1 {
     text-decoration: none;
-    color: red;
+    color: var(--red-color);
     position: absolute;
     left: 100px;
     top: 200px;
@@ -985,7 +993,7 @@ i {
     grid-row-start: 2;
     grid-row-end: 3;
     border-radius: 5px;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--light-grey-color);
     width: 370px;
     height: 392px;
     z-index: 90;
@@ -1000,7 +1008,7 @@ i {
 .Sed_egestas__ante_et_vulputate_volutpat__eros_p {
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.714;
     text-align: left;
     position: absolute;
@@ -1011,7 +1019,7 @@ i {
 }
 
 .input-lb {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-color);
     position: absolute;
     top: 210px;
     border: none;
@@ -1022,7 +1030,7 @@ i {
 }
 
 .email-lb {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-color);
     position: absolute;
     top: 270px;
     border: none;
@@ -1033,7 +1041,7 @@ i {
 }
 
 .textarea-lb {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-color);
     position: absolute;
     top: 333px;
     border: none;
@@ -1044,7 +1052,7 @@ i {
 }
 
 .btn-lb {
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     top: 437px;
     left: 430px;
@@ -1058,7 +1066,7 @@ i {
 .send-btn {
     font-size: 15px;
     font-family: "FjallaOne", sans-serif;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     text-transform: uppercase;
     line-height: 1.2;
     z-index: 98;
@@ -1078,7 +1086,7 @@ i {
 .personal-data {
     font-size: 18px;
     font-family: "Lato", monospace;
-    color: rgb(232, 76, 61);
+    color: var(--red-color);
     line-height: 1.5;
     text-align: left;
     position: absolute;
@@ -1092,7 +1100,7 @@ i {
 .personal-lb {
     font-size: 16px;
     font-family: "Lato", monospace;
-    color: rgb(118, 124, 126);
+    color: var(--grey-color);
     line-height: 1.5;
     text-align: left;
     position: absolute;
@@ -1113,7 +1121,7 @@ i {
 }
 
 .footer {
-    background-color: rgb(32, 38, 40);
+    background-color: var(--light-black-color);
     position: absolute;
     left: -2px;
     top: 2182px;
@@ -1146,7 +1154,7 @@ i {
 .footer-links {
     font-size: 14px;
     font-family: "Lato", monospace;
-    color: rgb(231, 231, 231);
+    color: var(--light-grey-color);
     line-height: 1.2;
     text-align: left;
     position: absolute;
@@ -1155,12 +1163,12 @@ i {
 }
 
 .slash {
-    color: rgb(159, 170, 173);
+    color: var(--grey-color);
     margin: 15px;
 }
 
 .span-red {
-    color: rgb(232, 76, 61);
+    color: var(--red-color);
 }
 .span-grey {
     color:rgb(159, 170, 173);
@@ -1179,7 +1187,7 @@ i {
     background-image: url("./photos/foot1.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 1025px;
     top: 80px;
@@ -1201,7 +1209,7 @@ i {
     background-image: url("./photos/foot2.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 1078px;
     top: 80px;
@@ -1223,7 +1231,7 @@ i {
     background-image: url("./photos/foot3.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(232, 76, 61);
+    background-color: var(--red-color);
     position: absolute;
     left: 1130px;
     top: 80px;
