@@ -38,8 +38,8 @@ class Apt {
         arr.sort(function (a, b) { return a - b })
 
         if (arr.length % 2) {
-            return [min, max, arr, arr[half]]
-        } else return [min, max, arr, (arr[half] + arr[half-1])/2]
+            return [min, max, arr[half]]
+        } else return [min, max, (arr[half] + arr[half-1])/2]
     }
 
     selection(arr) {
@@ -61,9 +61,4 @@ class Apt {
 
 }
 
-let user = new Apt()
-const arr = [-1, -3, -10, 8, 10, 11, 2, -9, 15]
-console.log(user.getMaxSubSumO(arr))
-console.log(user.getMaxSubSumO2(arr))
-console.log(user.selection(arr))
-console.log(user.search(arr))
+module.exports = Apt
