@@ -1,4 +1,4 @@
-const BinaryConvert = require('./bc.js')
+const BinaryConvert = require('./bin-conv')
 let binConv = new BinaryConvert()
 
 describe('BinaryConvert: toBIN()', () => {

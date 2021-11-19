@@ -1,4 +1,4 @@
-const Tf = require('./tf')
+const Tf = require('./txt-form')
 const tf = new Tf()
 
 describe('tf: textFormatter', () => {

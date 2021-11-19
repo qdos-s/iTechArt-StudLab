@@ -1,4 +1,4 @@
-const Apt = require('./apt')
+const Apt = require('./arr-proc-tool')
 const apt = new Apt()
 const arr = [-1, -3, -10, 8, 10, 11, 2, -9, 15]
 

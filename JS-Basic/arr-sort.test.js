@@ -1,4 +1,4 @@
-const SortArray = require('./as')
+const SortArray = require('./arr-sort')
 const as = new SortArray()
 const arr = [2, 3, 11, 7, -2, 5, 4]
 const sortedArr = [-2, 2, 3, 4, 5, 7, 11]

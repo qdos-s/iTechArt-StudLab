@@ -1,4 +1,4 @@
-const {parseCalculationString, StringCalc} = require('./sc')
+const {parseCalculationString, StringCalc} = require('./str-calc')
 const sc = new StringCalc()
 
 describe('sc: calculate', () => {
