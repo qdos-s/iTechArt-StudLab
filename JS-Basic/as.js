@@ -4,7 +4,7 @@ class SortArray {
         let sortedArr = arr.sort((a, b) => {
             return a - b
         })
-        console.log(sortedArr)
+        return sortedArr
     }
     //bubble sort
     bubbleSort(arr) {
@@ -19,7 +19,7 @@ class SortArray {
                 }
             }
         }
-        console.log(arr)
+        return arr
     }
     //selection sort
     selectionSort(arr) {
@@ -33,7 +33,7 @@ class SortArray {
             arr[min] = arr[i]
             arr[i] = t
         }
-        console.log(arr)
+        return arr
     }
     //insertion sort 
     insertionSort(arr) {
@@ -47,7 +47,7 @@ class SortArray {
             }
             arr[j + 1] = v
         }
-        console.log(arr)
+        return arr
     }
     //ShellSort
     shellSort(arr) {
@@ -65,14 +65,8 @@ class SortArray {
             }
             i = (i == 2) ? 1 : Math.floor(i * 5 / 11)
         }
-        console.log(arr)
+        return arr
     }
 }
 
-
-let user = new SortArray()
-user.arrSort([2, 3, 11, 7, -2, 5, 4])
-user.bubbleSort([2, 3, 11, 7, -2, 5, 4])
-user.selectionSort([2, 3, 11, 7, -2, 5, 4])
-user.insertionSort([2, 3, 11, 7, -2, 5, 4])
-user.shellSort([2, 3, 11, 7, -2, 5, 4])
+module.exports = SortArray
