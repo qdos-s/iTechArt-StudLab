@@ -1,0 +1,1787 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&family=Oswald&display=swap');
+
+:root {
+    --red-color: rgb(232, 76, 61);
+    --grey-color: rgb(102, 97, 85);
+    --light-grey-color: rgb(231, 231, 231);
+    --white-color: rgb(255, 255, 255);
+    --light-black-color: rgb(32, 38, 40);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 80px;
+    background-color: var(--light-black-color);
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    width: 1923px;
+}
+
+.wrapper {
+    height: 100%;
+    padding-left: 375px;
+    padding-right: 375px;
+    background-color: black;
+}
+
+
+.header {
+    display: grid;
+    height: 80px;
+    grid-template-columns: 750px 75px 75px 90px 85px 85px;
+    grid-template-areas:
+        "a b c d e f";
+}
+
+
+
+.box-site-name a {
+    max-width: 650px;
+    grid-area: a;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+
+.box-home a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: b;
+    height: 80px;
+    background-color: var(--red-color); 
+    text-align: center;
+}
+
+.box-about a {
+    grid-area: c;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-services a {
+    grid-area: d;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-portfolio a {
+    grid-area: e;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-contact a {
+    grid-area: f;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+
+
+
+.block-img {
+    width: 1173px;
+    height: 560px;
+}
+
+.Layer_1 {
+    background-image: url("./photos/Layer 1.png");
+    opacity: 0.588;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 560px;
+    z-index: 10;
+}
+
+
+.bg {
+    background-color: var(--grey-color);
+    box-shadow: 0px 1px 0px 0px rgba(232, 232, 232, 0.75);
+    position: absolute;
+    left: -1px;
+    top: 80px;
+    width: 1922px;
+    height: 560px;
+    z-index: 9;
+}
+
+.cirR {
+    background-color: var(--red-color);
+    position: absolute;
+    left: 410px;
+    top: 300px;
+    width: 35px;
+    height: 70px;
+    z-index: 16;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+.cirL {
+    background-color: var(--red-color);
+    position: absolute;
+    left: 375px;
+    top: 300px;
+    width: 35px;
+    height: 70px;
+    z-index: 15;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+
+}
+
+.cirR p {
+    position: absolute;
+    line-height: 70px;
+    left: 8px;
+}
+
+.cirL p {
+    position: absolute;
+    line-height: 70px;
+    right: 8px;
+}
+
+.Clivuam_tinc {
+    font-size: 31px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--light-grey-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 374.926px;
+    top: 394.4px;
+    z-index: 11;
+}
+
+.Nunc_dignissim_risus_id_metus {
+    font-size: 31px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--light-grey-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 373.864px;
+    top: 433.4px;
+    z-index: 12;
+}
+
+
+.http {
+    font-size: 15px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--red-color);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 373.937px;
+    top: 475.883px;
+    z-index: 13;
+}
+
+.line {
+    background-image: url("./photos/line.png");
+    position: absolute;
+    left: 625px;
+    top: 410px;
+    width: 252px;
+    height: 2px;
+    z-index: 14;
+}
+
+.grey_bar {
+    width: 1173px;
+    height: 275px;
+}
+
+.grey_background {
+    display: grid;
+    grid-template-areas: "a b c";
+    grid-template-columns: repeat(3, 385px);
+    grid-gap: 30px;
+    background-color: var(--light-grey-color);
+    position: absolute;
+    left: -2px;
+    top: 640px;
+    width: 1923px;
+    height: 277px;
+    z-index: 19;
+    justify-content: center;
+}
+
+.redLink {
+    color: var(--red-color);
+}
+
+.content-item1 {
+    grid-area: a;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item2 {
+    grid-area: b;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item3 {
+    grid-area: c;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item1-grid {
+    display: grid;
+    grid-template-areas:
+        "x y"
+        "x z";
+    grid-template-columns: 100px 270px;
+    grid-template-rows: auto;
+
+}
+
+.icon-item1 {
+    grid-area: x;
+    border-radius: 50%;
+    background-image: url("./photos/1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--red-color);
+    position: absolute;
+    left: 375px;
+    top: 101px;
+    width: 70px;
+    height: 70px;
+    z-index: 23;
+
+}
+
+.aliquam-item1 p {
+    grid-area: y;
+    font-size: 21px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--light-black-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 475.921px;
+    top: 106.261px;
+    z-index: 21;
+}
+
+.text-item1 p {
+    grid-area: z;
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 474.937px;
+    top: 140.25px;
+    width: 263px;
+    height: 60px;
+    z-index: 22;
+}
+
+.content-item2-grid {
+    display: grid;
+    grid-template-areas:
+        "x y"
+        "x z";
+    grid-template-columns: 100px 270px;
+    grid-template-rows: auto;
+}
+
+.icon-item2 {
+    background-image: url("./photos/2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    position: absolute;
+    left: 775px;
+    top: 101px;
+    width: 70px;
+    height: 70px;
+    z-index: 29;
+}
+
+.cras-item2 {
+    grid-area: y;
+    font-size: 21px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--light-black-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 874.924px;
+    top: 106.261px;
+    z-index: 27;
+}
+
+.text-item2 {
+    grid-area: z;
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 874.937px;
+    top: 140.25px;
+    width: 263px;
+    height: 60px;
+    z-index: 28;
+}
+
+.content-item3-grid {
+    display: grid;
+    grid-template-areas:
+        "x y"
+        "x z";
+    grid-template-columns: 100px 270px;
+    grid-template-rows: auto;
+}
+
+.icon-item3 {
+    background-image: url("./photos/3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    position: absolute;
+    left: 1175px;
+    top: 101px;
+    width: 70px;
+    height: 70px;
+    z-index: 37;
+}
+
+.vivamus-item3 {
+    grid-area: y;
+    font-size: 21px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--light-black-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 1275.847px;
+    top: 106.9px;
+    z-index: 33;
+}
+
+.text-item3 {
+    grid-area: z;
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 1274.937px;
+    top: 140.25px;
+    width: 263px;
+    height: 60px;
+    z-index: 34;
+}
+
+.white_bar {
+    width: 1173px;
+    height: 515px;
+}
+
+.white_background {
+    background-color: var(--white-color);
+    position: absolute;
+    top: 915px;
+    left: -2px;
+    width: 1923px;
+    height: 516px;
+}
+
+.white_bar_grid {
+    display: grid;
+    grid-template-columns: 385px 385px 400px;
+    grid-template-rows: 153px 40px 240px;
+    grid-template-areas:
+        "a a b",
+        "c c b",
+        "d e b";
+
+    justify-content: center;
+
+}
+
+.item-a {
+    grid-area: a;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Donec {
+    background-image: url("./photos/Donec nec justo eget felis facilisis fermentum. Aliquam porttit.png");
+    position: absolute;
+    left: 377px;
+    top: 80px;
+    width: 628px;
+    height: 46px;
+    z-index: 42;
+}
+
+
+
+.item-b {
+    grid-area: b;
+    grid-row: 1/4;
+    grid-column: 3;
+
+}
+
+.Shape_2 {
+    border-radius: 50%;
+    background-color: var(--light-grey-color);
+    position: absolute;
+    left: 1191px;
+    top: 80px;
+    width: 355px;
+    height: 355px;
+    z-index: 35;
+}
+
+
+
+.item-c {
+    grid-area: c;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.lineC {
+    background-image: url("./photos/line.png");
+    position: absolute;
+    left: 375px;
+    top: 151px;
+    width: 770px;
+    height: 41px;
+    z-index: 43;
+    text-align: center;
+
+}
+
+.img-wrap {
+    position: absolute;
+    left: 375px;
+    z-index: 100;
+    width: 770px;
+    height: 37px;
+    background-color: var(--white-color);
+
+}
+
+.Civamus {
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    z-index: 52;
+}
+
+
+.item-d {
+    grid-area: d;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Sed_egestas_anteet_ {
+    font-size: 16px;
+    font-family: "Lato", monospace;
+    color: var(--light-black-color);
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 375px;
+    top: 220px;
+    z-index: 45;
+}
+
+.Eros_pede_semper_est__vitae_luctus_metus_libero {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 375px;
+    top: 250px;
+    width: 350px;
+    height: 108px;
+    z-index: 44;
+}
+
+.btn {
+    background-color: var(--red-color);
+    border-radius: 40px;
+    position: absolute;
+    border: 0;
+    left: 375px;
+    top: 396px;
+    width: 70px;
+    height: 37px;
+    z-index: 46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.More {
+
+    font-size: 14px;
+    font-family: "Oswald", serif;
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: center;
+    position: absolute;
+
+    z-index: 47;
+}
+
+
+
+.item-e {
+    grid-area: e;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Aenean_egestas_anteet_ {
+    font-size: 16px;
+    font-family: "Lato", monospace;
+    color: var(--light-black-color);
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 760px;
+    top: 220px;
+    z-index: 45;
+}
+
+.Lorem_pede_semper_est__vitae_luctus_metus_libero {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 760px;
+    top: 250px;
+    width: 350px;
+    height: 108px;
+    z-index: 44;
+}
+
+.btnE {
+    background-color: var(--red-color);
+    border-radius: 40px;
+    position: absolute;
+    border: 0;
+    left: 760px;
+    top: 396px;
+    width: 70px;
+    height: 37px;
+    z-index: 46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MoreE {
+
+    font-size: 14px;
+    font-family: "Oswald", serif;
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: center;
+    position: absolute;
+
+    z-index: 47;
+}
+
+
+.red_background {
+    width: 1173px;
+    height: 188px;
+    left: 375px;
+    border-radius: 10px;
+    background-color: var(--red-color);
+    position: absolute;
+    height: 187px;
+    z-index: 99;
+}
+
+.white_bg {
+    background-color: var(--white-color);
+    width: 1923px;
+    height: 187px;
+    left: -2px;
+    position: absolute;
+    z-index: 1;
+}
+
+.red_background_grid {
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item3 item4";
+    grid-template-columns: 125px 500px 395px 150px;
+    grid-template-rows: 187px;
+
+}
+
+.red-item1 {
+    grid: item1;
+
+}
+
+.Shape_3 {
+    border-radius: 50%;
+    background-image: url("./photos/man.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--light-black-color);
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    width: 70px;
+    height: 70px;
+    z-index: 60;
+}
+
+
+.red-item2 {
+    grid: item2;
+}
+
+.Donec_nec_justo_eget {
+    font-size: 21px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 45px;
+    z-index: 57;
+}
+
+.Ede_semper_est {
+    font-size: 16px;
+    font-family: "Lato", monospace;
+    color: var(--white-color);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    left: 125px;
+    top: 88px;
+    width: 435px;
+    height: 40px;
+    z-index: 58;
+}
+
+.author {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--white-color);
+    font-style: italic;
+    line-height: 1.714;
+    text-align: center;
+    position: absolute;
+    z-index: 59;
+}
+
+.red-item3 {
+    grid: item3;
+}
+
+.Morbi_vitae_luctus {
+    font-size: 21px;
+    font-family: "FjallaOne";
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 45px;
+    z-index: 69;
+}
+
+.red-form {
+    background-color: var(--white-color);
+    position: absolute;
+    top: 95px;
+    border: none;
+    border-radius: 40px;
+    width: 380px;
+    height: 41px;
+    z-index: 64;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    font-style: italic;
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 65;
+}
+
+
+
+.red-item4 {
+    grid: item4;
+}
+
+.red-btn {
+    background-color: var(--light-black-color);
+    position: absolute;
+    top: 95px;
+    border: none;
+    border-radius: 40px;
+    width: 120px;
+    height: 41px;
+    z-index: 66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe {
+    font-size: 12px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    z-index: 68;
+}
+
+.last_block {
+    background-color: var(--white-color);
+    width: 1923px;
+    height: 567px;
+    left: -2px;
+    position: absolute;
+    top: 1615px;
+    z-index: 1;
+}
+
+.last_block_grid {
+    display: grid;
+    position: absolute;
+    width: 1173px;
+    height: 567px;
+    left: 375px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: 110px 390px;
+    grid-template-areas:
+        "a b c",
+        "d e f";
+}
+
+.lb_item1 {
+    grid-area: a;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Aliquam_tincidunt {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--light-black-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 65px;
+    z-index: 74;
+}
+
+.lb_item2 {
+    grid-area: b;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Nunc_dignissim_risu {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--light-black-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 65px;
+    z-index: 74;
+}
+
+.lb_item3 {
+    grid-area: c;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.lb_item4 {
+    grid-area: d;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.img-lb1 {
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    position: absolute;
+    top: 150px;
+    width: 70px;
+    height: 70px;
+    z-index: 75;
+}
+
+.p_lb1 {
+    background-image: url("./photos/line.png");
+    position: absolute;
+    top: 130px;
+    width: 370px;
+    height: 1px;
+    z-index: 86;
+}
+
+.Donec_nec_justo_eget_felis_facilisis_fermentum_ {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    left: 100px;
+    top: 155px;
+    width: 254px;
+    height: 58px;
+    z-index: 83;
+}
+
+.lb_link1 {
+    text-decoration: none;
+    color: var(--red-color);
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    width: 100px;
+}
+
+.container1 {
+    position: absolute;
+    top: -20px;
+}
+
+.container2 {
+    position: absolute;
+}
+
+.item2 {
+    position: absolute;
+    top: 125px;
+}
+
+.container3 {
+    position: absolute;
+    top: 235px;
+}
+
+.item3 {
+    position: absolute;
+    top: 125px;
+}
+
+.item4 {
+    position: absolute;
+    top: 265px;
+}
+
+
+.lb_item5 {
+    grid-area: e;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 5px;
+    background-color: var(--light-grey-color);
+    width: 370px;
+    height: 392px;
+    z-index: 90;
+}
+
+.content-nunc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sed_egestas__ante_et_vulputate_volutpat__eros_p {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    top: 145px;
+    width: 301px;
+    height: 36px;
+    z-index: 91;
+}
+
+.input-lb {
+    background-color: var(--white-color);
+    position: absolute;
+    top: 210px;
+    border: none;
+    border-radius: 40px;
+    width: 310px;
+    height: 41px;
+    z-index: 92;
+}
+
+.email-lb {
+    background-color: var(--white-color);
+    position: absolute;
+    top: 270px;
+    border: none;
+    border-radius: 40px;
+    width: 310px;
+    height: 41px;
+    z-index: 92;
+}
+
+.textarea-lb {
+    background-color: var(--white-color);
+    position: absolute;
+    top: 333px;
+    border: none;
+    border-radius: 10px;
+    width: 310px;
+    height: 81px;
+    z-index: 92;
+}
+
+.btn-lb {
+    background-color: var(--red-color);
+    position: absolute;
+    top: 437px;
+    left: 430px;
+    border: none;
+    border-radius: 40px;
+    width: 100px;
+    height: 41px;
+    z-index: 97;
+}
+
+.send-btn {
+    font-size: 15px;
+    font-family: "FjallaOne", sans-serif;
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    z-index: 98;
+}
+
+
+
+
+.lb_item6 {
+    grid-area: f;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.personal-data {
+    font-size: 18px;
+    font-family: "Lato", monospace;
+    color: var(--red-color);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    top: 145px;
+    left: 50px;
+    width: 250px;
+    height: 63px;
+    z-index: 105;
+}
+
+.personal-lb {
+    font-size: 16px;
+    font-family: "Lato", monospace;
+    color: var(--grey-color);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    width: 250px;
+    height: 63px;
+    z-index: 105;
+}
+
+.span-data {
+    font-weight: bold;
+}
+
+.icons-lb {
+    position: absolute;
+    top: 150px;
+}
+
+.footer {
+    background-color: var(--light-black-color);
+    position: absolute;
+    left: -2px;
+    top: 2182px;
+    width: 1923px;
+    height: 204px;
+    z-index: 118;
+}
+
+.footer-grid {
+    display: grid;
+    position: absolute;
+    width: 1173px;
+    height: 204px;
+    left: 375px;
+    grid-template-areas:
+        "a b c d",
+        "e b c d";
+    grid-template-columns: 1023px repeat(3, 1fr);
+    grid-template-rows: 110px 50px;
+}
+
+.footer-el1 {
+    grid-area: a;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-links {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    color: var(--light-grey-color);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    top: 100px;
+    z-index: 119;
+}
+
+.slash {
+    color: var(--grey-color);
+    margin: 15px;
+}
+
+.span-red {
+    color: var(--red-color);
+}
+.span-grey {
+    color:rgb(159, 170, 173);
+}
+
+.footer-el2 {
+    grid-area: b;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-crcl1 {
+    border-radius: 50%;
+    background-image: url("./photos/foot1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--red-color);
+    position: absolute;
+    left: 1025px;
+    top: 80px;
+    width: 43px;
+    height: 43px;
+    z-index: 121;
+}
+
+.footer-el3 {
+    grid-area: c;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-crcl2 {
+    border-radius: 50%;
+    background-image: url("./photos/foot2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--red-color);
+    position: absolute;
+    left: 1078px;
+    top: 80px;
+    width: 43px;
+    height: 43px;
+    z-index: 121;
+}
+
+.footer-el4 {
+    grid-area: d;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-crcl3 {
+    border-radius: 50%;
+    background-image: url("./photos/foot3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--red-color);
+    position: absolute;
+    left: 1130px;
+    top: 80px;
+    width: 43px;
+    height: 43px;
+    z-index: 121;
+}
+
+.footer-el5 {
+    grid-area: e;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footer-p {
+    font-size: 14px;
+    font-family: "Lato", monospace;
+    line-height: 1.714;
+    text-align: left;
+    position: absolute;
+    top: 125px;
+    z-index: 120;
+}
+
+@media screen and (max-width:470px) {
+    .header {
+        padding-left: 10px;
+        display: grid;
+        justify-content: center;
+        width: 470px;
+        height: 80px;
+        grid-template-columns: 60px 70px 70px 85px 95px 75px;
+        grid-template-areas:
+            "a b c d e f";
+        position: absolute;
+        left: 0;
+    }
+
+    .block-img {
+        width: 470px;
+        height: 135px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+
+    .Layer_1 {
+        background-size: 470px;
+        background-image: url("./photos/Layer 1.png");
+        background-repeat: no-repeat;
+        opacity: 0.588;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 470px;
+        height: 135px;
+        z-index: 10;
+    }
+
+    .cirR {
+        left: 120px;
+        top: 80px;
+        width: 20px;
+        height: 40px;
+    }
+
+    .cirL {
+        left: 95px;
+        top: 80px;
+        width: 20px;
+        height: 40px;
+    }
+
+    .cirR p {
+        top: -13px;
+        left: 3px;
+    }
+
+    .cirL p {
+        top: -13px;
+        right: 2px;
+    }
+
+    .Clivuam_tinc {
+        font-size: 12px;
+        left: 145px;
+        top: 80px;
+    }
+
+    .Nunc_dignissim_risus_id_metus {
+        font-size: 10px;
+        left: 145px;
+        top: 100px;
+    }
+
+
+    .http {
+        font-size: 8px;
+        left: 145px;
+        top: 115px;
+    }
+
+    .line {
+        left: 240px;
+        top: 85px;
+        width: 70px;
+        height: 1px;
+    }
+
+    .grey_bar {
+        width: 470px;
+        height: 275px;
+    }
+
+    .grey_background {
+        display: grid;
+        grid-template-areas: "a b c";
+        grid-template-columns: repeat(3, 156px);
+        grid-gap: 5px;
+        position: absolute;
+        left: 0px;
+        top: 215px;
+        width: 470px;
+        height: 277px;
+
+    }
+
+    .content-item1-grid {
+        grid-template-columns: 56px 100px;
+    }
+
+    .icon-item1 {
+        left: 40px;
+        top: 30px;
+    }
+
+    .aliquam-item1 p {
+        font-size: 11px;
+        left: 25px;
+        top: 130px;
+    }
+
+    .text-item1 p {
+        font-size: 10px;
+        left: 20px;
+        top: 150px;
+        width: 140px;
+        height: 40px;
+    }
+
+    .content-item2-grid {
+        grid-template-columns: 56px 100px;
+    }
+
+    .icon-item2 {
+        left: 200px;
+        top: 30px;
+    }
+
+    .cras-item2 {
+        font-size: 11px;
+        left: 170px;
+        top: 130px;
+    }
+
+    .text-item2 {
+        font-size: 10px;
+        left: 165px;
+        top: 150px;
+        width: 156px;
+        height: 40px;
+    }
+
+    .content-item3-grid {
+        grid-template-columns: 56px 100px;
+    }
+
+    .icon-item3 {
+        left: 360px;
+        top: 30px;
+    }
+
+    .vivamus-item3 {
+        font-size: 11px;
+        left: 330px;
+        top: 130px;
+    }
+
+    .text-item3 {
+        font-size: 10px;
+        left: 325px;
+        top: 150px;
+        width: 140px;
+        height: 40px;
+    }
+
+    .white_bar {
+        width: 470px;
+        height: 515px;
+    }
+
+    .white_background {
+        top: 490px;
+        left: 0;
+        width: 470px;
+        height: 515px;
+    }
+
+    .Donec {
+        left: 50px;
+        top: 130px;
+        width: 200px;
+        height: 45px;
+    }
+
+    .Shape_2 {
+        left: 280px;
+        top: 40px;
+        width: 155px;
+        height: 155px;
+    }
+
+    .lineC {
+        left: 50px;
+        top: 200px;
+        width: 305px;
+        height: 40px;
+    }
+
+    .img-wrap {
+        top: 201px;
+        left: 50px;
+        width: 305px;
+        height: 38px;
+    }
+
+    .Sed_egestas_anteet_ {
+        font-size: 12px;
+        left: 50px;
+        top: 270px;
+    }
+
+    .Eros_pede_semper_est__vitae_luctus_metus_libero {
+        font-size: 10px;
+        left: 50px;
+        top: 300px;
+        width: 150px;
+        height: 108px;
+    }
+
+    .btn {
+        left: 50px;
+        top: 430px;
+    }
+
+    .Aenean_egestas_anteet_ {
+        font-size: 12px;
+        left: 270px;
+        top: 270px;
+    }
+
+    .Lorem_pede_semper_est__vitae_luctus_metus_libero {
+        font-size: 10px;
+        left: 270px;
+        top: 300px;
+        width: 150px;
+        height: 108px;
+    }
+
+    .btnE {
+        left: 270px;
+        top: 430px;
+    }
+
+    .red_background {
+        width: 470px;
+        left: 0px;
+        top: 185px;
+    }
+
+    .white_bg {
+        width: 470px;
+        height: 187px;
+        left: 0px;
+    }
+
+    .red_background_grid {
+        grid-template-columns: 50px 150px 170px 100px;
+    }
+
+    .Shape_3 {
+        left: 10px;
+        top: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .Donec_nec_justo_eget {
+        font-size: 12px;
+        top: 25px;
+    }
+
+    .Ede_semper_est {
+        font-size: 12px;
+        left: 70px;
+        top: 50px;
+        width: 135px;
+        height: 40px;
+    }
+
+    .author {
+        font-size: 12px;
+        top: 80px;
+        left: -5px;
+    }
+
+    .Morbi_vitae_luctus {
+        font-size: 12px;
+        left: 220px;
+        top: 25px;
+    }
+
+    .red-form {
+        top: 55px;
+        left: 220px;
+        border-radius: 40px;
+        width: 200px;
+        height: 31px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .red-btn {
+        left: 220px;
+        top: 95px;
+        width: 100px;
+        height: 31px;
+    }
+
+    .last_block {
+        width: 470px;
+        height: 1400px;
+        left: 0x;
+        top: 1160px;
+    }
+
+    .last_block_grid {
+        width: 470px;
+        height: 1400px;
+        left: 0px;
+        grid-template-rows: 100px 300px 100px 300px 100px 300px;
+        grid-template-columns: 470px;
+        grid-template-areas:
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f";
+    }
+
+    .Aliquam_tincidunt {
+        top: 55px;
+        left: 125px;
+    }
+
+    .lb_item4 {
+        grid-area: d;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .lb_item2 {
+        grid-area: b;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .Nunc_dignissim_risu {
+        font-size: 21px;
+        left: 125px;
+        top: 515px;
+        z-index: 100;
+    }
+
+    .lb_item5 {
+        grid-area: d;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 470px;
+    }
+
+    .img-lb1 {
+        left: 70px;
+        top: 150px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .p_lb1 {
+        left: 20px;
+        top: 130px;
+        width: 430px;
+        height: 1px;
+    }
+
+    .Donec_nec_justo_eget_felis_facilisis_fermentum_ {
+        left: 160px;
+    }
+
+    .lb_link1 {
+        left: 160px;
+    }
+
+
+    .lb_item3 {
+        grid-area: c;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 470px;
+        height: 400px;
+    }
+
+    .Sed_egestas__ante_et_vulputate_volutpat__eros_p {
+        font-size: 14px;
+        top: 545px;
+        width: 301px;
+        height: 36px;
+    }
+
+    .input-lb {
+        top: 600px;
+    }
+
+    .email-lb {
+        top: 660px;
+    }
+
+    .textarea-lb {
+        top: 720px;
+    }
+
+    .btn-lb {
+        top: 820px;
+        left: 80px;
+        width: 100px;
+        height: 41px;
+    }
+
+    .lb_item6 {
+        grid-area: f;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .personal-data {
+        top: 980px;
+        left: 150px;
+    }
+
+    .personal-lb {
+        top: 1010px;
+        left: 150px;
+    }
+
+    .icons-lb {
+        position: absolute;
+        left: 100px;
+        top: 980px;
+    }
+
+    .lb_item3 .Aliquam_tincidunt {
+        position: absolute;
+        top: 910px;
+        left: 125px;
+    }
+
+    .container1 {
+        top: -20px;
+    }
+
+    .container2 {
+        top: 100px;
+    }
+
+
+    .footer {
+        left: 0;
+        top: 2560px;
+        width: 470px;
+        height: 204px;
+    }
+
+    .footer-grid {
+        width: 470px;
+        height: 204px;
+        left: 0;
+        grid-template-areas:
+            "a b c d",
+            "e b c d";
+        grid-template-columns: 320px repeat(3, 1fr);
+        grid-template-rows: 110px 50px;
+    }
+
+    .footer-links {
+        font-size: 10px;
+        top: 100px;
+        left: 10px;
+    }
+
+    .footer-crcl1 {
+        left: 350px;
+        top: 95px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-crcl2 {
+        left: 390px;
+        top: 95px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-crcl3 {
+        left: 430px;
+        top: 95px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-p {
+        font-size: 14px;
+        top: 135px;
+        left: 10px;
+    }
+}
