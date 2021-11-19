@@ -43,17 +43,10 @@ class StringCalc {
 
             }
             calc = newCalc;
-            console.log(calc)
             newCalc = [];
         }
-        if (calc.length > 1) {
-            console.log('Error');
-            return calc;
-        } else {
-            return calc[0];
-        }
+        return ""+calc
     }
 }
 
-let user = new StringCalc()
-user.calculate(parseCalculationString('-2.23333+2*3/2+3+4'))
+module.exports = {parseCalculationString, StringCalc}
