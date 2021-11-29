@@ -37,7 +37,6 @@
         }
 
         .details {
-            font-weight: bold;
             font-size: 16px;
             margin: 0 auto;
         }
@@ -53,20 +52,20 @@
         const div = document.querySelector('.poke')
         const btns = document.querySelector('.btns')
 
-        const gqlQuery = `query pokemons($limit: Int, $offset: Int) {
-  pokemons(limit: $limit, offset: $offset) {
-    count
-    next
-    previous
-    status
-    message
-    results {
-      url
-      name
-      image
-    }
-  }
-}`;
+        let gqlQuery = `query pokemons($limit: Int, $offset: Int) {
+        pokemons(limit: $limit, offset: $offset) {
+            count
+            next
+            previous
+            status
+            message
+            results {
+            url
+            name
+            image
+            }
+        }
+        }`;
 
         for (let i = 0; i < 10; i++) {
             let k = document.createElement('button')
@@ -123,13 +122,47 @@
             }
 
             if (e.target.tagName === 'IMG') {
-                if (document.querySelector('div.details').classList.contains('active')) {
-                    document.querySelector('div.details').classList.remove('active');
-                    document.querySelector('.details').innerHTML = ""
-                } else {
-                    document.querySelector('div.details').classList.add('active');
-                    document.querySelector('.details').innerHTML = "TEXT"
-                }
+                let gqlQuery = `{
+                    pokemon(name: "${e.target.getAttribute('name')}") {
+                        id
+                        name
+                        weight
+                        height
+                        forms {
+                        name
+                        }
+                        message
+                    }
+                    }`;
+
+                fetch(`https://graphql-pokeapi.graphcdn.app/`, {
+                    credentials: 'omit',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: gqlQuery,
+                        variables: gqlVariables,
+                    }),
+                    method: 'POST',
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data);
+                        if (document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).classList.contains('active')) {
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).classList.remove('active');
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).innerHTML = ``
+                        } else {
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).classList.add('active');
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).innerHTML = `
+                            id: ${data.data.pokemon.id} <br>
+                            weight: ${data.data.pokemon.weight}<br>
+                            height: ${data.data.pokemon.height}<br>
+                            name: "${data.data.pokemon.name}"
+                            `
+                        }
+                    }
+
+                    );
+
             }
 
 
@@ -140,18 +173,15 @@
             for (let i = data.data.pokemons.results.length - 8; i < data.data.pokemons.results.length; i++) {
                 let dv = document.createElement('div')
                 dv.setAttribute('class', 'divClass')
+                dv.setAttribute('name', `${data.data.pokemons.results[i].name}`)
                 div.appendChild(dv).innerHTML = `
-                <img value="${i + 1}" src="${data.data.pokemons.results[i].image}">
+                <img  name="${data.data.pokemons.results[i].name}" src="${data.data.pokemons.results[i].image}">
                 <div class='name'> ${data.data.pokemons.results[i].name} </div>
-                <div value="${i + 1}" class='details'>  </div>
+                <div name="${data.data.pokemons.results[i].name}" class='details'>  </div>
                 `
 
             }
         }
-
-
-
-
 
     </script>
 </body>
