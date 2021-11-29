@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <b>API Национального банка для получения официального курса белорусского рубля по отношению
+            к иностранным валютам.</b>
+    </p>
+    <select id="mode">
+        <option value="1">Курс валюты за период</option>
+    </select>
+    <span id="Cur">Cur_ID валюты 1 <input type="text" id="iCur" style='width:50px' /> Cur_ID валюты 2 <input type="text"
+            id="iCur2" style='width:50px' /> </span>
+    <span id="period">с: <input type="text" id="ifrom" /> по: <input type="text" id="ito" /></span>
+    <input type="button" id="btn" value="получить" />
+    <table id="res" style='width:300px;'>
+        <tr id="head">
+            <td id='date' style="width:80px;"></td>
+            <td id='USD' style="width:50px"></td>
+            <td id='EUR' style="width:50px"></td>
+        </tr>
+    </table>
+    <div id='nodata'></div>
+
+    <script type="text/javascript">
+        const uri = 'https://www.nbrb.by/api/'
+
+        function parseRuDate(s) {
+            let parts = s.split('.');
+
+            parts[0] = parseInt(parts[0], 10);
+            parts[1] = parseInt(parts[1], 10);
+            parts[2] = parseInt(parts[2], 10);
+
+            return `${parts[2]}-${parts[1]}-${parts[0]}`
+        }
+
+        function currency() {
+            fetch(uri + 'exrates/currencies/' + document.querySelector('#iCur').value)
+                .then(response => {
+                    if (response.status >= 200 && response.status < 400) {
+                        return response.json()
+                    }
+                })
+                .then(data => {
+                    typeof data === "string" ? JSON.parse(data) : data
+                    if (data === undefined) {
+                        document.querySelector('#USD').innerHTML = 'NOT FOUND'
+                    } else {
+                        document.querySelector('#USD').innerHTML = data.Cur_Abbreviation
+                    }
+
+                    document.querySelector('#date').innerHTML = 'Дата'
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        }
+
+        function currency2() {
+            fetch(uri + 'exrates/currencies/' + document.querySelector('#iCur2').value)
+                .then(response => {
+                    if (response.status >= 200 && response.status < 400) {
+                        return response.json()
+                    }
+                })
+                .then(data => {
+                    typeof data === "string" ? JSON.parse(data) : data
+                    if (data === undefined) {
+                        document.querySelector('#EUR').innerHTML = 'NOT FOUND'
+                    } else {
+                        document.querySelector('#EUR').innerHTML = data.Cur_Abbreviation
+                    }
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        }
+
+
+        function rateDyn() {
+
+            fetch(uri + 'exrates/rates/dynamics/' + document.querySelector('#iCur').value +
+                '?startDate=' + parseRuDate(document.querySelector('#ifrom').value) + '&endDate=' + parseRuDate(document.querySelector('#ito').value))
+                .then(response => {
+                    if (response.status >= 200 && response.status < 400) {
+                        return response.json()
+                    }
+                })
+                .then(data => {
+                    if (document.querySelector('.tbl')) document.querySelector('.tbl').parentNode.removeChild(document.querySelector('.tbl'))
+                    document.querySelector('#nodata').innerHTML = ''
+                    typeof data === "string" ? JSON.parse(data) : data
+                    let el = data
+                    let body = document.body
+                    let tbl = document.createElement('table')
+                    tbl.classList.add('tbl')
+                    tbl.style.width = '300px';
+                    tbl.style.height = '70px'
+                    tbl.style.border = '1px solid black';
+
+                    fetch(uri + 'exrates/rates/dynamics/' + document.querySelector('#iCur2').value +
+                        '?startDate=' + parseRuDate(document.querySelector('#ifrom').value) + '&endDate=' + parseRuDate(document.querySelector('#ito').value))
+                        .then(response => {
+                            if (response.status >= 200 && response.status < 400) {
+                                return response.json()
+                            }
+                        })
+                        .then(data2 => {
+                            typeof data2 === 'string' ? JSON.parse(data2) : data2
+                            let el2 = data2
+
+                            if (el.length === 0 && el2.length === 0) {
+                                document.querySelector('.tbl').style.display = 'none'
+                                document.querySelector('#nodata').innerHTML = 'Нет данных за указанный период.'
+                            }
+
+                            for (let i = 0; i < el.length && i < el2.length || el.length === 0 || el2.length === 0; i++) {
+                                let tr = tbl.insertRow();
+                                for (let j = 0; j < 3; j++) {
+                                    let td = tr.insertCell();
+                                    if (el.length === 0) {
+                                        if (j === 0) td.append(el2[i].Date.slice(0, 10))
+                                        if (j === 1) {
+                                            td.append('Not found')
+                                        }
+                                        if (j === 2) {
+                                            td.append(el2[i].Cur_OfficialRate)
+                                        }
+                                    } else if (el2.length === 0) {
+                                        if (j === 0) td.append(el[i].Date.slice(0, 10))
+                                        if (j === 1) {
+                                            td.append(el[i].Cur_OfficialRate)
+                                        }
+                                        if (j === 2) {
+                                            td.append('Not found')
+                                        }
+                                    } else {
+                                        if (j === 0) td.append(el[i].Date.slice(0, 10))
+                                        if (j === 1) {
+                                            td.append(el[i].Cur_OfficialRate)
+                                        }
+                                        if (j === 2) {
+                                            td.append(el2[i].Cur_OfficialRate)
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        })
+                    body.appendChild(tbl);
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+
+        }
+
+
+
+        let btn = document.querySelector('#btn')
+        btn.addEventListener('click', currency)
+        btn.addEventListener('click', currency2)
+        btn.addEventListener('click', rateDyn)
+
+
+    </script>
+</body>
+
+</html>

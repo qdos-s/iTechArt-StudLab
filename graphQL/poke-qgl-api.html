@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .divClass {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0 auto;
+        }
+
+        .details {
+            font-size: 16px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btns"></div>
+
+
+    <div class="poke"></div>
+    <script>
+        const div = document.querySelector('.poke')
+        const btns = document.querySelector('.btns')
+
+        let gqlQuery = `query pokemons($limit: Int, $offset: Int) {
+        pokemons(limit: $limit, offset: $offset) {
+            count
+            next
+            previous
+            status
+            message
+            results {
+            url
+            name
+            image
+            }
+        }
+        }`;
+
+        for (let i = 0; i < 10; i++) {
+            let k = document.createElement('button')
+            btns.appendChild(k).innerHTML = i + 1
+            k.setAttribute('value', `${i}`)
+
+        }
+
+
+
+        let gqlVariables = {
+            limit: 8,
+            offset: 0,
+        };
+
+        fetch('https://graphql-pokeapi.graphcdn.app/', {
+            credentials: 'omit',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                query: gqlQuery,
+                variables: gqlVariables,
+            }),
+            method: 'POST',
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                pokeHtml(data)
+            });
+
+
+        window.addEventListener('click', function (e) {
+            if (e.target.tagName === 'BUTTON') {
+                document.querySelector('.poke').innerHTML = ''
+                let gqlVariables = {
+                    limit: 8,
+                    offset: 8 * e.target.value,
+                }
+
+                fetch('https://graphql-pokeapi.graphcdn.app/', {
+                    credentials: 'omit',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: gqlQuery,
+                        variables: gqlVariables,
+                    }),
+                    method: 'POST',
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data);
+                        pokeHtml(data)
+                    });
+            }
+
+            if (e.target.tagName === 'IMG') {
+                let gqlQuery = `{
+                    pokemon(name: "${e.target.getAttribute('name')}") {
+                        id
+                        name
+                        weight
+                        height
+                        forms {
+                        name
+                        }
+                        message
+                    }
+                    }`;
+
+                fetch(`https://graphql-pokeapi.graphcdn.app/`, {
+                    credentials: 'omit',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: gqlQuery,
+                        variables: gqlVariables,
+                    }),
+                    method: 'POST',
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data);
+                        if (document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).classList.contains('active')) {
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).classList.remove('active');
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).innerHTML = ``
+                        } else {
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).classList.add('active');
+                            document.querySelector(`div.divClass div[name=${data.data.pokemon.name}]`).innerHTML = `
+                            id: ${data.data.pokemon.id} <br>
+                            weight: ${data.data.pokemon.weight}<br>
+                            height: ${data.data.pokemon.height}<br>
+                            name: "${data.data.pokemon.name}"
+                            `
+                        }
+                    }
+
+                    );
+
+            }
+
+
+        })
+
+
+        function pokeHtml(data) {
+            for (let i = data.data.pokemons.results.length - 8; i < data.data.pokemons.results.length; i++) {
+                let dv = document.createElement('div')
+                dv.setAttribute('class', 'divClass')
+                dv.setAttribute('name', `${data.data.pokemons.results[i].name}`)
+                div.appendChild(dv).innerHTML = `
+                <img  name="${data.data.pokemons.results[i].name}" src="${data.data.pokemons.results[i].image}">
+                <div class='name'> ${data.data.pokemons.results[i].name} </div>
+                <div name="${data.data.pokemons.results[i].name}" class='details'>  </div>
+                `
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
